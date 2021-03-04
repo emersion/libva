@@ -1582,6 +1582,11 @@ typedef enum {
     /** \brief Surface usage hint, gives the driver a hint of intended usage 
      *  to optimize allocation (e.g. tiling) (int, read/write). */
     VASurfaceAttribUsageHint,
+    /** \brief List of possible DRM format modifiers (pointer, write).
+     *
+     * The value must be a pointer to a VADRMFormatModifierList.
+     */
+    VASurfaceAttribDRMFormatModifiers,
     /** \brief Number of surface attributes. */
     VASurfaceAttribCount
 } VASurfaceAttribType;
